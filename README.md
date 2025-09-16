@@ -1,78 +1,40 @@
-# quarkus-getting-started
+# 🎓 MentorIA
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+O **MentorIA** é uma **startup acadêmica** desenvolvida como parte do **Projeto Integrador** do curso de **Engenharia de Software**.  
+Nosso objetivo é criar uma **plataforma web inteligente** para auxiliar estudantes na preparação para vestibulares, utilizando **Inteligência Artificial** para fornecer suporte personalizado nos estudos.
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+---
 
-## Running the application in dev mode
+## 🚀 Tecnologias Utilizadas
 
-You can run your application in dev mode that enables live coding using:
+- **Frontend**: [Angular](https://angular.io/)  
+- **Backend**: [Quarkus](https://quarkus.io/) com **Java 21**  
+- **Banco de Dados**: [MySQL](https://www.mysql.com/)  
+- **Inteligência Artificial**: modelos e algoritmos para recomendações e apoio ao aprendizado  
 
-```shell script
-./mvnw quarkus:dev
-```
+---
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+## 📌 Funcionalidades (em desenvolvimento)
 
-## Packaging and running the application
+- 📚 **Simulados e Questões**: banco de questões organizado por matérias e dificuldade  
+- 🤖 **IA de Recomendação**: sugere conteúdos e questões de acordo com o desempenho do aluno  
+- 📊 **Dashboard de Progresso**: relatórios e estatísticas de evolução  
+- 🎯 **Planos de Estudo Personalizados**: criação automática de trilhas de estudo  
+- 🌐 **Acesso Web Responsivo**: disponível em diferentes dispositivos  
 
-The application can be packaged using:
+---
 
-```shell script
-./mvnw package
-```
+## ⚙️ Como Executar o Projeto
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) e [Angular CLI](https://angular.io/cli) instalados  
+- [Java 21](https://www.oracle.com/java/technologies/downloads/) configurado  
+- [Maven](https://maven.apache.org/)  
+- [MySQL](https://www.mysql.com/) rodando localmente ou em container Docker  
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+### Passos
 
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/quarkus-getting-started-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
-
-## Related Guides
-
-- REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-- REST Jackson ([guide](https://quarkus.io/guides/rest#json-serialisation)): Jackson serialization support for Quarkus REST. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it
-- Hibernate ORM with Panache ([guide](https://quarkus.io/guides/hibernate-orm-panache)): Simplify your persistence code for Hibernate ORM via the active record or the repository pattern
-- JDBC Driver - MySQL ([guide](https://quarkus.io/guides/datasource)): Connect to the MySQL database via JDBC
-
-## Provided Code
-
-### Hibernate ORM
-
-Create your first JPA entity
-
-[Related guide section...](https://quarkus.io/guides/hibernate-orm)
-
-[Related Hibernate with Panache section...](https://quarkus.io/guides/hibernate-orm-panache)
-
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/MentorIA.git
+   cd MentorIA
